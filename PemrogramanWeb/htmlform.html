@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Website Pariwisata</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background :url('Main-BG.jpeg');
+
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #0074cc;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        form {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #0074cc;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #005aa1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ramsy Tour and Travel</h1>
+    </header>
+
+    <section>
+        <h2>Data Destinasi Pariwisata</h2>
+        <table>
+            <tr>
+                <th>Nama Destinasi</th>
+                <th>Lokasi</th>
+                <th>Jenis Wisata</th>
+            </tr>
+            <tr>
+                <td>Bali</td>
+                <td>Indonesia</td>
+                <td>Pantai</td>
+            </tr>
+            <tr>
+                <td>Paris</td>
+                <td>Prancis</td>
+                <td>Sejarah</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Formulir Kontak</h2>
+        <form action="proses_formulir.php" method="post">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" name="pesan" rows="4" required></textarea>
+
+            <input type="submit" value="Kirim">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Ramsy. Hak Cipta Dilindungi.</p>
+    </footer>
+</body>
+
+</html>
